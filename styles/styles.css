@@ -324,7 +324,7 @@ header {
   margin-top: 104px;
   width: 50%;
   height: 230px;
-  background: url(../../assets/header2.jpg);
+  background: url(../assets/header2.jpg);
   background-size: cover;
   position: relative;
 }
@@ -417,6 +417,10 @@ section h4 {
   color: #3b68a7;
   font-size: 1.4rem;
   padding: 10px 0;
+}
+
+.photo a {
+  color: #3b68a7;
 }
 
 .photo .resume {
