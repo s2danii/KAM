@@ -1,0 +1,77 @@
+$primaryColor: rgb(59, 104, 167);
+$accentColor: rgb(50, 50, 50);
+$grey: rgb(104, 104, 104);
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3, 
+h4,
+h5,
+div,
+ul,
+p {
+    margin: 0; 
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-weight: 500;
+    color: $grey;
+    font-size: 1.4rem;
+}
+
+h2 {
+    padding: 10px 0;
+}
+
+footer {
+    background: rgb(221, 221, 221);
+    text-align: center;
+    padding: 10px 0;
+
+    p {
+        font-size: 1.2rem;
+    }
+    
+}
