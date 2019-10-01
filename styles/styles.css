@@ -385,12 +385,11 @@ section h4 {
 .teamPhotos {
   display: -ms-grid;
   display: grid;
+  width: 80%;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-  margin-top: 40px;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+  grid-gap: 30px;
+  margin: 40px auto;
 }
 
 .photo {
