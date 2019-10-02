@@ -1,124 +1,44 @@
-section {
-    padding: 60px 0 50px;
-    text-align: center;
 
-    h4 {
-        font-size: 1.6rem;
-        padding: 20px 0;
-    }
-}
 
 // ABOUT SECTION
 
 .about {
-
     padding: 100px 0;
+
+    .aboutUs {
+        margin-top: 40px; 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 35px;
+    }
+
+    h4 {
+        text-align: center;
+    }
 
     p {
         text-align: left;
     }
 }
 
-.team {
-    h2 {
-        font-size: 1.6rem;
-    }
-
-    h2 + p {
-        padding-top: 40px;
-    }
-}
-
-
-.teamPhotos {
-    display: grid;
-    width: 80%;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
-    margin: 40px auto;
+.aboutInfo {
     
-}
-
-.photo {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    h4 {
-        font-size: 1.4rem;
-        padding-bottom: 0;
-    }
-    
-    p {
+    .icon {
         color: $primaryColor;
-        font-size: 1.4rem;
-        padding: 10px 0;
-        
-    }
-
-    a {
-        color: $primaryColor; 
-    }
-
-    .resume {
-        font-size: 2rem;
-    }
-
-    img {
-        box-shadow: 1px 2px 5px rgba(170, 170, 170, 0.8);
-        
-        // &:hover {
-            
-        // }
+        display: inline-block;
+        padding: 10px;
+        border-radius: 50%;
+        font-size: 2.5rem;
+        width: 58px;
+        height: 58px;
+        border: 2px solid $primaryColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
     }
 }
 
-.clickedBio.resume {
-    color: rgb(181, 194, 214)
-}
-
-.bioSection {
-    background: rgb(240, 240, 240);
-    
-}
-
-.bio {
-    text-align: left;    
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-    transition: opacity 0.5s;
-    
-    h4 {
-        padding: 50px 0 0;
-    }
-
-    h4 + p {
-        font-size: 1.6rem;
-        color: $primaryColor;
-    }
-
-    p {
-        font-size: 1.4rem;
-        padding: 10px 0;
-        line-height: 1.6rem;
-    }
-
-    p:last-of-type {
-        padding-bottom: 50px;
-    }
-}
-
-.resume {
-    cursor: pointer;
-    
-}
-
-.seeInfo.bio {
-    opacity: 1;
-    height: auto;
-}
 
 
 

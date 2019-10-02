@@ -1,46 +1,90 @@
 // SERVICES SECTION
 
 .services {
-    background: rgb(240, 240, 240);
+    background: rgb(245, 245, 245);
 }
 
-.serviceSections {
+.serviceInfo {
+    text-align: left;
+    
+    p {
+        text-align: left;
+    }
+}
+
+.IPO, .CFO {
+    display: none;
+}
+
+.serviceDials {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
+    grid-auto-rows: minmax(auto);
+    
+    // grid-gap: 0 20px;
+
+}
+
+.dials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-start: span 2;
+    
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+.dial {
+    position: relative;
+    padding: 20px;
+    max-width: 200px;
+    min-width: 170px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    
     
 
-    .serviceInfo {
-        // text-align: center;
+    div {
+        position: absolute;
+        vertical-align: center;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
         display: flex;
-        flex-direction: column;
         align-items: center;
-        margin-top: 30px;
-
-        .icon {
-            // color: white;
-            // background: $primaryColor;
-            color: $primaryColor;
-            display: inline-block;
-            padding: 10px;
-            border-radius: 50%;
-            font-size: 2.5rem;
-            width: 58px;
-            height: 58px;
-            border: 2px solid $primaryColor;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin: 20px;
+        text-transform: uppercase;
+        padding: 8%;
+        cursor: pointer;
+        
+        &:hover {
+            background: rgba(255, 255, 255, 0.4);
         }
+        
+    }
+}
 
-        h4 {
-            text-transform: uppercase;
-            font-size: 1.4rem;
-        }
+.serviceInfo {
+    grid-row-start: span 3;    
 
-        p {
-            font-size: 1.4rem;
-            line-height: 1.6rem;
-        }
+    h4 {
+        text-transform: uppercase;
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+    }
+}
+
+.services {
+    h2 + p {
+        
     }
 }

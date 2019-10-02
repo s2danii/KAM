@@ -28,10 +28,24 @@ app.smoothScroll = function () {
     
 }
 
+app.services = function () {
+    $(`.dial`).on(`click`, function() {
+        let clickedDial = $(this).attr(`id`);
+        $(`.serviceInfo`).css(`display`, `none`);
+        $(`.${clickedDial}`).fadeToggle(function(){
+            duration: 3000;
+        });
+
+        
+        
+    })
+}
+
 // INIT FUNCTION
 app.init = function () {
     app.seeInfo();
     app.smoothScroll();
+    app.services();
 };
 
 // DOCUMENT READY
