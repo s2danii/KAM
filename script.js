@@ -84,9 +84,16 @@ app.testimonials = function () {
                 'position': 'relative'
             });
         }
-    });
-        
+    });        
+}
 
+app.backup = function () {
+    $(`.backup`).on(`click`, function() {
+        event.preventDefault();
+        $(`html`).animate({
+            scrollTop: 0
+        }, 800);
+    })
 }
 
 
@@ -98,6 +105,7 @@ app.init = function () {
     app.services();
     app.testimonials();
     app.scrollPercent();
+    app.backup();
 };
 
 // DOCUMENT READY

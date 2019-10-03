@@ -40,6 +40,10 @@ li {
     width: 80%;
     max-width: 1280px;
     margin: 0 auto;
+
+    @media (max-width: 900px) {
+        width: 90%;
+    }
 }
 
 p {
@@ -101,4 +105,15 @@ h2::after {
     height: 3px;
     background: $primaryColor;
     margin: 15px auto;
+}
+
+.backup {
+    position: fixed;
+    bottom: 5vh;
+    right: 5vh;
+    font-size: 3.2rem;
+    padding: 10px 15px;
+    border-radius: 50%;
+    border: none;
+    color: $primaryColor;
 }

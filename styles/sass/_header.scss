@@ -22,9 +22,20 @@ header {
     left: -235px;
     top: 40px;
     z-index: 100;
+    transition: all 1s;
+
+    @media (max-width: 580px) {
+        left: -150px;
+        background: rgba(250, 250, 250, 0.7);
+    }
+
+    span {
+        background: white;
+        padding: 10px 0;
+    }
 
     h1, p {
-        background: white;
+        
         position: relative;
         left: -13px;        
         display: inline-block;
@@ -34,10 +45,6 @@ header {
     h1 {
         padding-top: 30px;
         font-size: 2.5rem;
-
-        span {
-            background: none;
-        }
     }
 
     p {
