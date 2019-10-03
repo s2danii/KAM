@@ -1,6 +1,7 @@
 $primaryColor: rgb(59, 104, 167);
 $accentColor: rgb(50, 50, 50);
 $grey: rgb(104, 104, 104);
+$background: rgb(245, 245, 245);
 
 html {
     font-size: 62.5%;
@@ -47,7 +48,7 @@ p {
     color: rgb(78, 78, 78);
 }
 
-h1,
+
 h2,
 h3 {
     text-transform: uppercase;
@@ -91,4 +92,13 @@ section {
 h2 + p {
     padding-bottom: 40px;
     font-size: 1.4rem;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: $primaryColor;
+    margin: 15px auto;
 }

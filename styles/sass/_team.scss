@@ -52,7 +52,7 @@
 }
 
 .clickedBio.resume {
-    color: rgb(181, 194, 214)
+    color: rgb(181, 194, 214);
 }
 
 .bioSection {
@@ -94,9 +94,21 @@
 .resume {
     cursor: pointer;
     
+    &:hover {
+        transform: scale(1.3);
+    }
 }
 
 .seeInfo.bio {
     opacity: 1;
     height: auto;
+}
+
+.learnMore {
+    padding: 20px 0;
+    color: $primaryColor;
+    
+    i {
+        padding: 0 10px;
+    }
 }

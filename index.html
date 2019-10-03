@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>KAM Consulting</title>
+    <title>KAM Consulting Inc.</title>
     <script src="https://kit.fontawesome.com/cda4a106cc.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image" href="assets/icon.png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:400,500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="flexslider.css" type="text/css">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
@@ -31,7 +34,7 @@
         </nav>            
             <div class="headerImage">
                 <div class="headerInfo">
-                    <h1>KAM Consulting</h1>
+                    <h1>KAM Consulting <span>Inc.</span></h1>
                     <p>Partners in navigating complexity</p>
                 </div>
             </div>            
@@ -39,8 +42,6 @@
     <main>
         <section class="about" id="about">
             <div class="wrapper">
-                <!-- <h3>Who we are</h3> -->
-                <h2>KAM Consulting Inc.</h2>
                 <div class="aboutUs">
                     <div class="aboutInfo">
                         <p class="icon"><i class="fas fa-user-tie"></i></p>
@@ -67,14 +68,15 @@
         <section class="services" id="services">
             <div class="wrapper">
                 <h2>Our services</h2>
-                <p>Click on a service to learn more</p>
                 <div class="serviceDials">
-                    <div class="serviceInfo accounting">
+                    <div class="serviceInfo accounting" data-aos="fade"
+                    data-aos-delay="500" data-aos-duration="1000">
                         <h4>Accounting Advisory Services</h4>
                         <p>We have deep financial reporting experience across multiple industries in IFRS and US GAAP. We help
                         companies solve complex accounting and financial reporting challenges by supporting companies in
                         implementing new accounting standards, preparing and reviewing financial statements and other public
                         documents.</p>
+                        <p class="learnMore">Click on another service to learn more <i class="fas fa-chevron-right"></i></p>
                     </div>
                     <div class="serviceInfo IPO">
                         <h4>IPO / RTO Services</h4>
@@ -82,6 +84,7 @@
                         for an IPO/RTO by evaluating and implementing the requirements for going public and reporting as a
                         public company. We are there with our clients from the beginning of the process to ongoing
                         compliance after becoming public.</p>
+                        <p class="learnMore">Click on another service to learn more <i class="fas fa-chevron-right"></i></p>
                     </div>
                     <div class="serviceInfo CFO">
                         
@@ -90,8 +93,9 @@
                         well established companies and on average have over 12 years of experience with broad skill sets and
                         diverse industry backgrounds. We offer specialized expertise on an as needed basis and can manage
                         internal projects as well as support existing internal resources.</p>
+                        <p class="learnMore">Click on another service to learn more <i class="fas fa-chevron-right"></i></p>
                     </div>
-                    <div class="dials">
+                    <div class="dials" data-aos="fade-left" data-aos-duration="1000">
                         <div class="dial" id="accounting">
                             <img src="assets/dial1.png" alt="">
                             <div>
@@ -111,13 +115,13 @@
                             </div>                    
                         </div>
                         <div>
-                            <p>90%</p>
+                            <p><span id="accValue">90</span>%</p>
                         </div>
                         <div>
-                            <p>85%</p>
+                            <p><span id="ipoValue">85</span>%</p>
                         </div>
                         <div>
-                            <p>75%</p>
+                            <p><span id="cfoValue">75</span>%</p>
                         </div>
                     </div>
                 </div>
@@ -140,28 +144,27 @@
                         <h4>Devin Miller, CPA</h4>
                         <p>Sr. Consultant</p>
                         <p><a href="https://www.linkedin.com/in/devin-miller-cpa-8392865b/" target="_blank"><i class="fab fa-linkedin"></i> Connect</a></p>
-                        <p class="resume" title="Click to read more" id="devin"><i class="fas fa-chevron-down"></i></p>
+                        <p class="resume clickedBio" title="Click to read more" id="devin"><i class="fas fa-chevron-down"></i></p>
                     </div>
                     <div class="photo">
                         <img src="assets/mandeep3.jpg" alt="">
                         <h4>Mandeep Kamboj, CPA, CA</h4>
                         <p>Sr. Consultant</p>
                         <p><a href="https://www.linkedin.com/in/mandeep-kamboj-cpa-ca-88938b58/" target="_blank"><i class="fab fa-linkedin"></i> Connect</a></p>
-                        <p class="resume" title="Click to read more" id="mandeep"><i class="fas fa-chevron-down"></i></p>
+                        <p class="resume clickedBio" title="Click to read more" id="mandeep"><i class="fas fa-chevron-down"></i></p>
                     </div>
                     <div class="photo">
                         <img src="assets/Chris2.png" alt="">
                         <h4>Christopher Lim, CPA</h4>
                         <p>Consultant, Finance & Operations</p>
                         <p><a href="https://www.linkedin.com/in/chrislimks/" target="_blank"><i class="fab fa-linkedin"></i> Connect</a></p>
-                        <p class="resume" title="Click to read more"id="chris"><i class="fas fa-chevron-down"></i></p>
+                        <p class="resume clickedBio" title="Click to read more"id="chris"><i class="fas fa-chevron-down"></i></p>
                     </div>
                 </div>
             </div>
-                    <div class="bioSection">
+                    <div class="bioSection" data-aos="fade" data-aos-duration="3000" data-aos-easing="ease-in-out">
                         <div class="wrapper">
-
-                            <div class="bio avjit">
+                            <div class="bio avjit seeInfo" >
                                 <h4>Avjit Kamboj, CPA, CA, CPA (Illinois, USA)</h4>
                                 <p>Managing Director</p>
                                 <p>Avjit is a finance executive providing advisory services and interim leadership expertise in the areas of technical
@@ -220,6 +223,164 @@
                         </div>
                     </div>
         </section>
+        <section class="testimonials">
+            <div class="wrapper">
+                <h2>What clients say</h2>
+                <div class="cd-testimonials-wrapper cd-container">
+                    <ul class="cd-testimonials">
+                        <li>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua.</p>
+                            <div class="cd-author">
+                                <div class="cd-author-img">
+                                    <img src="assets/Clients/AMP.png" alt="Author image">
+
+                                </div>
+                                <ul class="cd-author-info">
+                                    <li>AMP Solar</li>
+                                    <li>industry name</li>
+                                </ul>
+                            </div>
+                        </li>
+                
+                        <li>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua.</p>
+                            <div class="cd-author">
+                                <div class="cd-author-img">
+                                    <img src="assets/Clients/Avicanna.png" alt="Author image">
+
+                                </div>
+                                <ul class="cd-author-info">
+                                    <li>Avicanna</li>
+                                    <li>industry name</li>
+                                </ul>
+                            </div>
+                        </li>
+                
+                        <li>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam tempora molestiae asperiores laboriosam non. Blanditiis error iure illo iste vitae maxime nesciunt enim nemo, consequatur quos aliquam repellendus unde sequi?</p>
+                            <div class="cd-author">
+                                <div class="cd-author-img">
+                                    <img src="assets/Clients/BOL.png" alt="Author image">
+                        
+                                </div>
+                                <ul class="cd-author-info">
+                                    <li>BOL</li>
+                                    <li>industry name</li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua.</p>
+                            <div class="cd-author">
+                                <div class="cd-author-img">
+                                    <img src="assets/Clients/Beleave.png" alt="Author image">
+                        
+                                </div>
+                                <ul class="cd-author-info">
+                                    <li>Beleave</li>
+                                    <li>industry name</li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua.</p>
+                            <div class="cd-author">
+                                <div class="cd-author-img">
+                                    <img src="assets/Clients/Canada House.png" alt="Author image">
+                        
+                                </div>
+                                <ul class="cd-author-info">
+                                    <li>Canada House</li>
+                                    <li>industry name</li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua.</p>
+                            <div class="cd-author">
+                                <div class="cd-author-img">
+                                    <img src="assets/Clients/Converge.png" alt="Author image">
+                        
+                                </div>
+                                <ul class="cd-author-info">
+                                    <li>Converge</li>
+                                    <li>industry name</li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua.</p>
+                            <div class="cd-author">
+                                <div class="cd-author-img">
+                                    <img src="assets/Clients/Docebo.jpg" alt="Author image">
+                        
+                                </div>
+                                <ul class="cd-author-info">
+                                    <li>Docebo</li>
+                                    <li>industry name</li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua.</p>
+                            <div class="cd-author">
+                                <div class="cd-author-img">
+                                    <img src="assets/Clients/Dye Durham.jpg" alt="Author image">
+                        
+                                </div>
+                                <ul class="cd-author-info">
+                                    <li>Dye Durham</li>
+                                    <li>industry name</li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua.</p>
+                            <div class="cd-author">
+                                <div class="cd-author-img">
+                                    <img src="assets/Clients/FSD Pharma.jpg" alt="Author image">
+                        
+                                </div>
+                                <ul class="cd-author-info">
+                                    <li>FSD Pharma</li>
+                                    <li>industry name</li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua.</p>
+                            <div class="cd-author">
+                                <div class="cd-author-img">
+                                    <img src="assets/Clients//Flowr.png" alt="Author image">
+                        
+                                </div>
+                                <ul class="cd-author-info">
+                                    <li>Flwr</li>
+                                    <li>industry name</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul> <!-- cd-testimonials -->
+                
+                </div>
+
+        </section>
         <section class="contact" id="contact">
             <div class="wrapper">
                 <h2>Contact Us</h2>
@@ -250,5 +411,8 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3393/jquery.flexslider-min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
 </body>
 </html>

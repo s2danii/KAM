@@ -1,7 +1,7 @@
 // SERVICES SECTION
 
 .services {
-    background: rgb(245, 245, 245);
+    background: $background;
 }
 
 .serviceInfo {
@@ -20,8 +20,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(auto);
-    
-    // grid-gap: 0 20px;
+    margin: 40px 0;
 
 }
 
@@ -43,8 +42,24 @@
     display: flex;
     justify-content: flex-end;
     margin: 0 auto;
+
     
     
+    &:hover {
+
+        div {
+            background: $primaryColor;
+            transition: all 1s;
+
+            p {
+                color: white;
+            }  
+        }
+        
+        img {
+            animation: dialSpin 1s 1 linear;
+        }
+    }
 
     div {
         position: absolute;
@@ -62,11 +77,14 @@
         padding: 8%;
         cursor: pointer;
         
-        &:hover {
-            background: rgba(255, 255, 255, 0.4);
-        }
+        
         
     }
+}
+
+@keyframes dialSpin {
+    0%  {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
 }
 
 .serviceInfo {
@@ -80,11 +98,5 @@
     p {
         font-size: 1.4rem;
         line-height: 1.6rem;
-    }
-}
-
-.services {
-    h2 + p {
-        
     }
 }
