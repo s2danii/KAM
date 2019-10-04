@@ -398,7 +398,7 @@ header {
 @media (max-width: 580px) {
   .headerInfo {
     left: -150px;
-    background: rgba(250, 250, 250, 0.7);
+    background: rgba(255, 255, 255, 0.7);
   }
 }
 
