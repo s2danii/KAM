@@ -385,6 +385,7 @@ header {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  overflow-x: hidden;
 }
 
 .headerImage {
@@ -411,7 +412,6 @@ header {
 @media (max-width: 580px) {
   .headerInfo {
     left: -150px;
-    right: 0;
     background: rgba(255, 255, 255, 0.7);
   }
 }
@@ -496,6 +496,7 @@ header {
 
 .services {
   background: whitesmoke;
+  overflow-x: hidden;
 }
 
 .serviceInfo {
