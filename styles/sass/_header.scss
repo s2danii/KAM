@@ -2,14 +2,13 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    
 }
 
 .headerImage {
     margin-top: 104px;
     width: 50%;
     height: 230px;
-    background: url(../assets/header2.jpg);
+    background: url(../assets/header.jpg);
     background-size: cover;
     position: relative;
 }
@@ -39,7 +38,6 @@ header {
         position: relative;
         left: -13px;        
         display: inline-block;
-
     }
 
     h1 {

@@ -117,3 +117,9 @@ h2::after {
     border: none;
     color: $primaryColor;
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    *::-ms-backdrop, [data-aos^=fade][data-aos^=fade]{
+        opacity: 1;
+    }
+}

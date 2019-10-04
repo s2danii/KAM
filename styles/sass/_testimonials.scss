@@ -8,6 +8,10 @@
   padding: 20px 40px 20px;
   z-index: 1;
   box-shadow: 1px 2px 5px rgba(170, 170, 170, 0.8);
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    top: -100px;
+  }
 }
 
 .cd-testimonials-wrapper:first-of-type {
@@ -91,7 +95,7 @@
     border-radius: 50%;
     padding: 10px;
     margin-right: 5px;
-    background: $grey;
+    background: white;
     border: 1px solid $grey;
     display: inline-block;
     
@@ -196,7 +200,6 @@
 }
 @media only screen and (min-width: 1170px) {
   .flex-direction-nav li a::before, .flex-direction-nav li a::after {
-    /* background-color: #5e5e63; */
     -webkit-transition: background-color 0.2s;
     -moz-transition: background-color 0.2s;
     transition: background-color 0.2s;

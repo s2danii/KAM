@@ -12,21 +12,20 @@ app.seeInfo = function () {
             $(`.${bio}`).addClass(`seeInfo`);
             $(`.resume`).addClass(`clickedBio`);
             $(this).removeClass(`clickedBio`);
-        }
-        
+        }        
     })
 }
 
 app.smoothScroll = function () {
-    $(`.navBar a`).on(`click`, function() {
+    $(`.navBar a`).on(`click`, function(event) {
         event.preventDefault();
         let scrollTo = this.hash
         $(`html`).animate({
             scrollTop: $(scrollTo).offset().top + -104
         }, 800);
-    })
-    
+    })    
 }
+
 
 app.services = function () {
     $(`.dial`).on(`click`, function() {
@@ -51,21 +50,8 @@ app.animateValue = function (id, start, end, duration) {
             clearInterval(timer);
         }
     }, stepTime);
-
 }
 
-app.scrollPercent = function () {
-    let services = $(`#services`).offset().top + $(`#services`).outerHeight();
-    $(window).scroll(function () {
-        let scrollHeight = ($(window).scrollTop() + $(window).height())
-        if (scrollHeight >= services) {
-            app.animateValue('accValue', 0, 90, 2000);
-            app.animateValue('ipoValue', 0, 85, 2000);
-            app.animateValue('cfoValue', 0, 75, 2000);
-            $(window).off(`scroll`);
-        }
-    })
-}
 
 app.testimonials = function () {
 
@@ -104,7 +90,6 @@ app.init = function () {
     app.smoothScroll();
     app.services();
     app.testimonials();
-    app.scrollPercent();
     app.backup();
 };
 

@@ -1,10 +1,12 @@
-nav {
-    width: 100%;
+nav {    
     position: fixed;
+    left: 0;
+    width: 100%;
     z-index: 200;
     box-shadow: 1px 2px 5px rgba(170, 170, 170, 0.5);
     ul {
         display: flex;
+        -ms-display: flex;
         font-size: 1.4rem;
 
         @media (max-width: 450px) {
@@ -26,14 +28,12 @@ nav {
 
 .navBar {
     background: white;
-    text-transform: uppercase;
-    
+    text-transform: uppercase;   
     
     ul {
         justify-content: flex-end;
     }
     
-
     li {
         padding: 25px 25px 20px;
 
@@ -42,7 +42,6 @@ nav {
         }
     }
     
-
     a {
         color: rgb(50,50,50);
         
