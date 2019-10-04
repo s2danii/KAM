@@ -53,19 +53,6 @@ app.animateValue = function (id, start, end, duration) {
 
 }
 
-app.scrollPercent = function () {
-    let services = $(`#services`).offset().top + $(`#services`).outerHeight();
-    $(window).scroll(function () {
-        let scrollHeight = ($(window).scrollTop() + $(window).height())
-        if (scrollHeight >= services) {
-            app.animateValue('accValue', 0, 90, 2000);
-            app.animateValue('ipoValue', 0, 85, 2000);
-            app.animateValue('cfoValue', 0, 75, 2000);
-            $(window).off(`scroll`);
-        }
-    })
-}
-
 app.testimonials = function () {
 
     $('.cd-testimonials-wrapper').flexslider({
@@ -103,7 +90,6 @@ app.init = function () {
     app.smoothScroll();
     app.services();
     app.testimonials();
-    app.scrollPercent();
     app.backup();
 };
 
