@@ -185,6 +185,7 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
 
 h1,
@@ -300,11 +301,16 @@ h2::after {
 
 nav {
   position: fixed;
-  left: 0;
   width: 100%;
   z-index: 200;
   -webkit-box-shadow: 1px 2px 5px rgba(170, 170, 170, 0.5);
           box-shadow: 1px 2px 5px rgba(170, 170, 170, 0.5);
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  nav {
+    left: 0;
+  }
 }
 
 nav ul {
@@ -405,6 +411,7 @@ header {
 @media (max-width: 580px) {
   .headerInfo {
     left: -150px;
+    right: 0;
     background: rgba(255, 255, 255, 0.7);
   }
 }
